@@ -17,9 +17,15 @@ public class passwordGenerator {
         String lowerCase = "qazwsxedcrfvtgbyhnujmiklop";
         String upperCase = "QWERTYUIOPLMKNJBHVGCFXDZSA";
         String specialSymbols = "!@$#";
-        String combineCharacter = lowerCase;
+        String combineCharacter = lowerCase;// if nothing is choosen then a password with only lowercase alphabets will
+                                            // be genrated.
 
         Random rand = new Random();
+
+        // Random method gives us the next random integer and if we give a integer as a
+        // parameter than the range og the random integer becoms from 0 to the integer
+        // passed.
+
         System.out.println("Do you want to include Uppercase alphabets (y/n)?");
         char c = in.next().charAt(0);
         if (c == 'y') {
@@ -41,6 +47,6 @@ public class passwordGenerator {
             password[i] = combineCharacter.charAt(rand.nextInt(combineCharacter.length()));
         }
 
-        return new String(password);
+        return new String(password);// converts the character array into a string.
     }
 }
