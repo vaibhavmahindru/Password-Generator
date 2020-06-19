@@ -1,4 +1,4 @@
-# This ia a simpple program to genrate a random password.
+# This ia a simple program to genrate a random password.
 
 User can select the following options:-
 
